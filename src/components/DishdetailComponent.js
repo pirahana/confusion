@@ -21,6 +21,14 @@ class DishDetail extends Component {
             );
     }
 
+    componentDidMount() {
+        console.log("Dish Detail component : Did Mount called");
+
+    }
+
+    componentDidUpdate() {
+        console.log("Dish Detail component : Did Update called")
+    }
     renderComments(comments) {
      
      //Todo
@@ -48,6 +56,7 @@ class DishDetail extends Component {
     }
 
     render(props) {
+        console.log('Dis detail: render called');
         let selectedDish = this.props.selectedDish;
         return (
             <div>

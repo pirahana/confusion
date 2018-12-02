@@ -11,8 +11,19 @@ class App extends Component {
     this.state = {
       dishes: DISHES
     }
+    console.log("App component : Constructor called");
+  }
+
+  componentDidMount() {
+    console.log("App component : Did Mount called");
+
+  }
+
+  componentDidUpdate() {
+    console.log("App component : Did Update called")
   }
   render() {
+    console.log('App compoent render called');
     return (
       <div className="App">
         <Main></Main>
