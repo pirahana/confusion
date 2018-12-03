@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { DISHES } from './shared/dishes';
 import Main from './components/MainComponent';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -25,9 +26,11 @@ class App extends Component {
   render() {
     console.log('App compoent render called');
     return (
+      <BrowserRouter>
       <div className="App">
         <Main></Main>
     </div>
+    </BrowserRouter>
     );
   }
 }
